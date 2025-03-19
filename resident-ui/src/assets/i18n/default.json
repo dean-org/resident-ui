@@ -29,6 +29,12 @@
       "name": "Kannada",
       "nativeName": "ಕನ್ನಡ",
       "locale": "kn_IN"
+    },
+    "bur":
+    {
+    "name": "Burmese",
+    "nativeName": "ဗမာစာ",
+    "locale": "my_MM"
     }
   },
   "keyboardMapping" :{
@@ -37,6 +43,7 @@
     "ara": "ar",
     "hin": "hi",
     "tam": "ta",
-    "kan": "kn"
+    "kan": "kn",
+    "bur": "my"
   }
 }
