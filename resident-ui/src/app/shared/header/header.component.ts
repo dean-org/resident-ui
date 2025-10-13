@@ -83,9 +83,19 @@ export class HeaderComponent implements OnInit, OnDestroy {
       if(supportedLanguages.length > 1){
         supportedLanguages.forEach((language) => {
           console.log('Processing language:', language.trim(), defaultJson.languages[language.trim()]);
-          this.selectLanguagesArr.push({
-           code: language.trim(),
-           value: defaultJson.languages[language.trim()].nativeName,
+          // this.selectLanguagesArr.push({
+          //  code: language.trim(),
+          //  value: defaultJson.languages[language.trim()].nativeName,
+          const langKey = language.trim();
+          const langObj = defaultJson.languages[langKey];
+          if (langObj) { // only push if the language exists
+            this.selectLanguagesArr.push({
+              code: langKey,
+              value: langObj.nativeName,
+            });
+          } else {
+            console.warn('Language not found in defaultJson.languages:', langKey);
+          }
           });
         });
       }
