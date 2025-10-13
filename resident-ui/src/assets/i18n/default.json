@@ -36,6 +36,11 @@
     "nativeName": "ဗမာစာ",
     "locale": "my_MM"
     }
+    "spa": {
+    "name": "Spanish",
+    "nativeName": "Español",
+    "locale": "es_ES"
+    }
   },
   "keyboardMapping" :{
     "eng": "en",
@@ -44,6 +49,7 @@
     "hin": "hi",
     "tam": "ta",
     "kan": "kn",
-    "bur": "my"
+    "bur": "my",
+    "spa": "es"
   }
 }
